@@ -1,0 +1,44 @@
+updated mordern style with emojj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark/Light Mode Toggle</title>
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toggle-container {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toggle-container" onclick="toggleMode()">
+    🌞🌜
+  </div>
+
+  <script>
+    const body = document.body;
+
+    function toggleMode() {
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
